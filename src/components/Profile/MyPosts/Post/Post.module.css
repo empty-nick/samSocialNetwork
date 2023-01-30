@@ -1,0 +1,25 @@
+.post{
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  /*border: 1px solid #232323;*/
+  background-color: #D7D7D7E7;
+  border-radius: 1rem;
+
+  margin: .7rem 1rem .7rem;
+  padding: .5rem;
+}
+
+.text{
+  color: #303030;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.post img{
+  width: 5vw;
+  aspect-ratio: 1/1;
+  margin-right: 1rem;
+}
