@@ -2,22 +2,37 @@
   grid-area: s;
   background-color: #e1bc00;
 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   border-radius: 1rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .item{
   color: white;
   font-size: 24px;
+  padding: .25rem .7rem;
+  margin: .4rem;
+  width: 75%;
+  will-change: transform;
+
+  border-radius: 1rem;
+  background-color: #232323;
+  text-align: left;
+  letter-spacing: 1px;
 }
 
 .item:hover{
-  border-left: 5px solid #00aab0;
-  padding-left: .5rem;
+  will-change: transform;
+  transition: .3s;
+  transform: scale(1.1);
+  border-radius: 1.2rem 0 1.2rem 0;
 }
 
 .item:hover > a{
-  color: #0029c9;
+  color: #fff;
 }
 
 a{
@@ -31,5 +46,5 @@ a{
 }
 
 .settings{
-
+  margin-top: 2rem;
 }

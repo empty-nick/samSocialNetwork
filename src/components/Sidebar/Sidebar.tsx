@@ -9,7 +9,7 @@ function Sidebar(){
         <div className={css.item}><a href="src/components">News</a></div>
         <div className={css.item}><a href="src/components">Music</a></div>
 
-        <div className={css.settings}><a href="src/components">Settings</a></div>
+        <div className={`${css.item} ${css.settings}`}><a href="src/components">Settings</a></div>
       </nav>
   )
 }

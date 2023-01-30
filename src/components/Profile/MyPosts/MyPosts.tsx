@@ -8,9 +8,8 @@ function MyPosts(){
         My posts
         <div className={css.newPost}>New post</div>
 
-        <Post />
-        <Post />
-        <Post />
+        <Post message='My first post' />
+        <Post message='Hi, how are you?' />
       </div>
   )
 }
