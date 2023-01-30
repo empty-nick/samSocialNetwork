@@ -1,0 +1,10 @@
+.header{
+  grid-area: h;
+  background-color: #00aab0;
+  border-radius: 1rem;
+}
+
+.header img{
+  height: 100%;
+  aspect-ratio: 3/2;
+}

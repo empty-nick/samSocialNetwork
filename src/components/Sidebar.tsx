@@ -1,11 +1,17 @@
 import React from "react";
+import classes from "./Sidebar.module.css"
 
-function Header(){
+function Sidebar(){
   return (
-      <header className="header">
-        <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="Apple"/>
-      </header>
+      <nav className={classes.sidebar}>
+        <div className={classes.item}><a href="">Profile</a></div>
+        <div className={`${classes.item} ${classes.active}`}><a href="">Messages</a></div>
+        <div className={classes.item}><a href="">News</a></div>
+        <div className={classes.item}><a href="">Music</a></div>
+
+        <div className={classes.settings}><a href="">Settings</a></div>
+      </nav>
   )
 }
 
-export default Header
+export default Sidebar
