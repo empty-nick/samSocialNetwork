@@ -1,0 +1,35 @@
+.sidebar{
+  grid-area: s;
+  background-color: #e1bc00;
+
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.item{
+  color: white;
+  font-size: 24px;
+}
+
+.item:hover{
+  border-left: 5px solid #00aab0;
+  padding-left: .5rem;
+}
+
+.item:hover > a{
+  color: #0029c9;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.item.active{
+  color: gold;
+  font-size: 26px;
+}
+
+.settings{
+
+}

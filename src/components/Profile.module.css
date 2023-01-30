@@ -1,0 +1,19 @@
+.main{
+  grid-area: m;
+  background-color: #e1bc00;
+  border-radius: 1rem;
+}
+
+.main img{
+  width: 100%;
+  aspect-ratio: 6/1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.post{
+  color: greenyellow;
+}
+
+.avaDescription{
+
+}
