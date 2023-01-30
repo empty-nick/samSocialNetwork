@@ -23,3 +23,24 @@
   aspect-ratio: 1/1;
   margin-right: 1rem;
 }
+
+.likes{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: .3rem .5rem;
+  padding: 0 .5rem;
+}
+
+.likeBtn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: .3rem .5rem;
+  padding: .4rem;
+
+  color: #00aab0;
+  font-size: 1.4vh;
+  border-radius: 1rem;
+  border: none;
+}
