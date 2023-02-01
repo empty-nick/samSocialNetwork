@@ -13,3 +13,8 @@
   font-size: 20px;
   color: #232323;
 }
+.app-content{
+  grid-area: m;
+  background-color: #e1bc00;
+  border-radius: 1rem;
+}
