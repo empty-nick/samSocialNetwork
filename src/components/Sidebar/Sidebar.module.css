@@ -32,11 +32,12 @@
 }
 
 .item:hover > a{
-  color: #fff;
+  color: #eaeaea;
 }
 
 a{
-  color: white;
+  display: block;
+  color: #fff;
   text-decoration: none;
 }
 

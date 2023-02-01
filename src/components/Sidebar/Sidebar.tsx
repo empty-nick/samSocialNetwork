@@ -4,12 +4,12 @@ import css from "./Sidebar.module.css"
 function Sidebar() {
   return (
       <nav className={css.sidebar}>
-        <div className={css.item}><a href="src/components">Profile</a></div>
-        <div className={`${css.item} ${css.active}`}><a href="src/components">Messages</a></div>
-        <div className={css.item}><a href="src/components">News</a></div>
-        <div className={css.item}><a href="src/components">Music</a></div>
+        <div className={css.item}><a href="/profile">Profile</a></div>
+        <div className={`${css.item} ${css.active}`}><a href="/messages">Messages</a></div>
+        <div className={css.item}><a href="/news">News</a></div>
+        <div className={css.item}><a href="/music">Music</a></div>
 
-        <div className={`${css.item} ${css.settings}`}><a href="src/components">Settings</a></div>
+        <div className={`${css.item} ${css.settings}`}><a href="/settings">Settings</a></div>
       </nav>
   )
 }
