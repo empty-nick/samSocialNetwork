@@ -1,4 +1,4 @@
-.post{
+.post {
   width: 80%;
   position: relative;
   display: flex;
@@ -12,19 +12,19 @@
   padding: .5rem;
 }
 
-.text{
+.text {
   color: #303030;
   font-size: 1.2vw;
   font-weight: 600;
 }
 
-.post img{
+.post img {
   width: 5vw;
   aspect-ratio: 1/1;
   margin-right: 1rem;
 }
 
-.likes{
+.likes {
   position: absolute;
   top: 0;
   right: 0;
@@ -32,7 +32,7 @@
   padding: 0 .5rem;
 }
 
-.likeBtn{
+.likeBtn {
   position: absolute;
   right: 0;
   bottom: 0;

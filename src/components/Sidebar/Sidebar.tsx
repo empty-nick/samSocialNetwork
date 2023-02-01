@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 import css from "./Sidebar.module.css"
 
-function Sidebar(){
+function Sidebar() {
   return (
       <nav className={css.sidebar}>
         <div className={css.item}><a href="src/components">Profile</a></div>
