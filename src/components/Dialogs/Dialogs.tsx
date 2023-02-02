@@ -1,17 +1,22 @@
 import React from "react"
 import css from "./Dialogs.module.css"
+import {NavLink} from "react-router-dom";
 
 const Dialogs = () => {
   return (
       <div className={css.content}>
         <div className={css.dialogs}>
 
-          <div className={css.dialog + ' ' + css.active}>
-            Maksim
+          <div className={css.dialog}>
+            <NavLink to='/messages/1' className={state => state.isActive ? css.active : css.inactive}>Maksim</NavLink>
           </div>
 
           <div className={css.dialog}>
-            Artemka
+            <NavLink to='/messages/2' className={state => state.isActive ? css.active : css.inactive}>Artemka</NavLink>
+          </div>
+
+          <div className={css.dialog}>
+            <NavLink to='/messages/3' className={state => state.isActive ? css.active : css.inactive}>Vanya</NavLink>
           </div>
 
         </div>
