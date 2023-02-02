@@ -2,5 +2,40 @@
   position: relative;
   padding: 1rem;
 
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+
   color: white;
+}
+
+.content > div{
+  margin: 1rem;
+}
+/**/
+.dialogs{
+  border-radius: 1rem;
+  background-color: #282828;
+  /*padding: .7rem;*/
+}
+.dialogs .dialog{
+  margin: .7rem;
+  padding: .3rem;
+  background-color: #414141;
+  border-radius: 1rem;
+  text-align: center;
+}
+.dialog.active{
+  border-top: 2px solid #fd8202;
+  border-bottom: 3px solid #114d8d;
+}
+/**/
+
+.messages{
+  border-radius: 1rem;
+  background-color: #282828;
+  padding: .7rem;
+}
+
+.messages .message{
+
 }
