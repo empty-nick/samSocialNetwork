@@ -31,18 +31,14 @@
   border-radius: 1.2rem 0 1.2rem 0;
 }
 
-.item:hover > a{
-  color: #eaeaea;
-}
-
-a{
+.item a{
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-.item.active{
-  color: gold;
+.item a.active{
+  color: #3399ff;
   font-size: 26px;
 }
 
