@@ -10,6 +10,7 @@ function MyPosts(){
 
         <Post message='My first post' />
         <Post message='Hi, how are you?' />
+        <Post message='I love my boyfriend, Maksik-aktik' />
       </div>
   )
 }
