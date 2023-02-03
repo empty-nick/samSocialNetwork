@@ -15,24 +15,9 @@
 .dialogs{
   border-radius: 1rem;
   background-color: #282828;
+
+  height: auto;
   /*padding: .7rem;*/
-}
-.dialogs .dialog{
-  margin: .7rem;
-  background-color: #414141;
-  border-radius: 1rem;
-  text-align: center;
-}
-.dialog a{
-  display: block;
-  padding: .3rem;
-  border-radius: 1rem;
-  text-decoration: none;
-  color: white;
-}
-a.active{
-  border-top: 2px solid #fd8202;
-  border-bottom: 3px solid #114d8d;
 }
 /**/
 

@@ -2,4 +2,9 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  padding-left: 1rem;
+}
+
+.text{
+  padding-left: 1rem;
 }

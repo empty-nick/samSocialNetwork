@@ -1,0 +1,13 @@
+.imageHandler{
+  width: 100%;
+}
+
+.imageHandler img{
+  width: 100%;
+  aspect-ratio: 6/1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.avaDescription{
+  padding: 1rem;
+}
