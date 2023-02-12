@@ -4,14 +4,14 @@ import Chat from "./Chat/Chat";
 import MessageWindow from "./MessageWindow/MessageWindow";
 
 const Dialogs = () => {
-  const dialogsData = [
-    { chatId: '1', chatName: 'Maksim' },
-    { chatId: '2', chatName: 'Artemka' },
-    { chatId: '3', chatName: 'Ivan' },
-    { chatId: '4', chatName: 'Kolya' },
-    { chatId: '5', chatName: 'Jane' }
-  ]
 
+  const dialogsData = [
+    {chatId: '1', chatName: 'Maksim'},
+    {chatId: '2', chatName: 'Artemka'},
+    {chatId: '3', chatName: 'Ivan'},
+    {chatId: '4', chatName: 'Kolya'},
+    {chatId: '5', chatName: 'Jane'}
+  ]
   const messagesData = [
     {id: 1, textMessage: 'Hi'},
     {id: 2, textMessage: 'How are you?'},
@@ -24,15 +24,13 @@ const Dialogs = () => {
 
         <div className={css.dialogs}>
 
-          <Chat chatName={dialogsData[0].chatName} chatId={dialogsData[0].chatId} />
-          <Chat chatName={dialogsData[1].chatName} chatId={dialogsData[1].chatId} />
+          {dialogsData.map( chat => <Chat chatName={chat.chatName} chatId={chat.chatId} key={chat.chatId}/>)}
 
         </div>
 
         <div className={css.messages}>
 
-          <MessageWindow textMessage={messagesData[0].textMessage} />
-          <MessageWindow textMessage={messagesData[1].textMessage} />
+          {messagesData.map( message => <MessageWindow textMessage={message.textMessage} key={message.id}/>)}
 
         </div>
       </div>
