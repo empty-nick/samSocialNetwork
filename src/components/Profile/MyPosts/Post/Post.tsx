@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import css from "./Post.module.css"
 
-function Post({message}: { message: string }){
-  const [like, setLike] = useState(0)
+function Post({message, likesCount}: { message: string, likesCount: number }){
+  const [like, setLike] = useState(likesCount)
 
   function likeCounter(){
     setLike(like + 1)
