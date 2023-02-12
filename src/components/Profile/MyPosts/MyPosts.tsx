@@ -21,8 +21,8 @@ function MyPosts() {
           </div>
         </div>
 
-        <Post message={postsData[0].postMessage} likesCount={postsData[0].likesCount} />
-        <Post message={postsData[1].postMessage} likesCount={postsData[1].likesCount} />
+        {postsData.map( (post, index) => <Post message={post.postMessage} likesCount={post.likesCount} key={index} />)}
+
       </div>
   )
 }
