@@ -3,3 +3,13 @@ export interface IPost {
   postMessage: string,
   likesCount: number
 }
+
+export interface IDialogData{
+  chatId: number,
+  chatName: string
+}
+
+export interface IMessageData{
+  id: number,
+  textMessage: string
+}

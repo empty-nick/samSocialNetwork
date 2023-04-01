@@ -8,9 +8,14 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import {IPost} from "./interface";
+import {IDialogData, IMessageData, IPost} from "./interface";
 
-function App({postsData} : {postsData:IPost[]}) {
+interface IApp{
+  postsData: IPost[],
+  dialogsData: IDialogData[],
+  messagesData: IMessageData[],
+}
+function App({postsData, dialogsData, messagesData} : IApp) {
   return (
       <BrowserRouter>
         <div className='App'>
@@ -19,7 +24,7 @@ function App({postsData} : {postsData:IPost[]}) {
           <div className='app-content'>
             <Routes>
               <Route path='/profile/*' element={<Profile postsData={postsData}/>}/>
-              <Route path='/messages/*' element={<Dialogs/>}/>
+              <Route path='/messages/*' element={<Dialogs dialogsData={dialogsData} messagesData={messagesData}/>}/>
               <Route path='/news/*' element={<News />}/>
               <Route path='/music/*' element={<Music />}/>
               <Route path='/settings/*' element={<Settings />}/>
