@@ -8,8 +8,9 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
+import {IPost} from "./interface";
 
-function App() {
+function App({postsData} : {postsData:IPost[]}) {
   return (
       <BrowserRouter>
         <div className='App'>
@@ -17,7 +18,7 @@ function App() {
           <Sidebar/>
           <div className='app-content'>
             <Routes>
-              <Route path='/profile/*' element={<Profile/>}/>
+              <Route path='/profile/*' element={<Profile postsData={postsData}/>}/>
               <Route path='/messages/*' element={<Dialogs/>}/>
               <Route path='/news/*' element={<News />}/>
               <Route path='/music/*' element={<Music />}/>
