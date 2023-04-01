@@ -1,14 +1,9 @@
 import React from "react";
 import css from "./MyPosts.module.css"
 import Post from "./Post/Post";
+import {IPost} from "../../../interface";
 
-function MyPosts() {
-
-  const postsData = [
-    {id: 1, postMessage: 'My first post', likesCount: 12},
-    {id: 2, postMessage: 'Hi, how are you?', likesCount: 11}
-  ]
-
+function MyPosts({postsData}: {postsData : IPost[]}) {
   return (
       <div className={css.content}>
         <h3 className={css.text}>My posts</h3>
@@ -21,7 +16,7 @@ function MyPosts() {
           </div>
         </div>
 
-        {postsData.map( (post, index) => <Post message={post.postMessage} likesCount={post.likesCount} key={index} />)}
+        {postsData.map((post, index) => <Post message={post.postMessage} likesCount={post.likesCount} key={index}/>)}
 
       </div>
   )

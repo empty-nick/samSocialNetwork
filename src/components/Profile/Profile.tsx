@@ -2,12 +2,13 @@ import React from "react";
 import css from "./Profile.module.css"
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import {IPost} from "../../interface";
 
-function Profile() {
+function Profile({postsData} : {postsData: IPost[]}) {
   return (
       <div className={css.content}>
         <ProfileInfo/>
-        <MyPosts/>
+        <MyPosts postsData={postsData} />
       </div>
   )
 }

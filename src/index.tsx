@@ -7,9 +7,15 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const postsData = [
+  {id: 1, postMessage: 'My first post', likesCount: 12},
+  {id: 2, postMessage: 'Hi, how are you?', likesCount: 11}
+]
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App postsData={postsData}/>
   </React.StrictMode>
 );
 
